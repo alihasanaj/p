@@ -1,0 +1,221 @@
+
+html, body {
+  height: 100%;
+  font-size: 1rem;
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#welcome-section, #projects {
+  height: 100%;
+}
+
+#contact {
+   height: 90%;
+}
+
+
+
+
+#navbar {
+  position: fixed;
+  text-align: right;
+  background-color: #EAF8BF;
+  padding-top: 0.3rem;
+  padding-bottom:0.2rem;
+  width: 95%;
+  padding-right: 10rem;
+  z-index: 100;
+}
+
+#navbar a:hover {
+  color: red;
+}
+
+#navbar a {
+  margin-left: 8rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#welcome-section {
+  background-color: #EAF8BF;
+  text-align: center;
+}
+
+#info {
+  margin: 0px 750px 0px 750px;
+  padding-top: 40vh;
+  color: black;
+  z-index: 99;
+}
+
+
+
+
+#projects {
+  height: 100%;
+  width: 100%;
+  background-color: #006992;
+}
+
+
+
+#projects-holder {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+#projects h1, #contact h1{
+  padding-top: 2rem;
+  padding-left: 45rem;
+}
+
+.project-title {
+  list-style: none;
+  display: grid;
+  grid-template-columns:200px 200px;
+}
+
+
+
+.projects {
+  border: 1px solid red;
+  width: 20rem;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  transition: all 1s ease;
+  background-size: cover;
+  z-index: 20;
+  cursor: pointer;
+}
+
+
+li p{
+  margin-top: 13.5rem;
+  margin-left: -0.01rem;
+  margin-right: -0.01rem;
+  border-top: 1px solid black;
+  font-size: 1rem;
+
+}
+
+
+.project-title li p {
+  padding-bottom: 3px;
+  background: white;
+}
+
+.projects:hover{
+  transform: scale(1.1) 
+}
+
+
+
+#CRM {
+  background-image:url("https://raw.githubusercontent.com/alihasanaj/CRM-Java/master/Previews/Login.PNG")
+}
+
+#Queen {
+  background-image:url("https://raw.githubusercontent.com/alihasanaj/8-of-Queens-Game/master/Previews/8-Queens-Game.PNG")
+   
+}
+
+#landing {
+  
+  background-image:url("https://s3-us-west-2.amazonaws.com/i.cdpn.io/2494743.ZqqaPw.small.09c96b9c-18e5-4f92-a632-97d7a51d86ea.png")
+   
+}
+
+#document {
+  background-image:url("https://s3-us-west-2.amazonaws.com/i.cdpn.io/2494743.NOmovX.small.024c0dab-7fe2-4581-a870-216d4474e899.png")
+}
+
+
+
+#contact {
+  background-color: #27476E;
+}
+
+
+
+
+@media only screen and (max-width: 1500px) {
+  #info {
+    margin: 0px 250px 0px 250px;
+  }
+  
+  .project-title {
+  list-style: none;
+}
+  
+  #projects, #welcome-section, #contact {
+    width: 150%;
+  }
+ 
+#projects, #welcome-section, #contact {
+    width: 250%;
+}
+
+}
+
+
+
+
+.project-title {
+  margin-left: 20rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns:500px 400px;
+}
+
+
+ 
+
+
+  
+#links {
+  margin-top: 12rem;
+  margin-left: 22rem;
+}
+  
+#contact a {
+      margin-right: 3rem;
+      padding:4rem;
+      border: 2px solid gray;
+      border-radius: 50%;
+      background-color: #F0F0F0;
+}
+
+#contact a:hover {
+    background-color: white;
+}
+
+#contact h1 {
+    padding-top: 8rem;
+}
+
+
+footer {
+  height: 10%;
+  background-color: #22313F;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 2rem;
+}
