@@ -1,4 +1,6 @@
 
+
+/* Tags */
 html, body {
   height: 100%;
   font-size: 1rem;
@@ -16,6 +18,26 @@ a {
   color: black;
 }
 
+li p{
+  margin-top: 13.5rem;
+  margin-left: -0.01rem;
+  margin-right: -0.01rem;
+  border-top: 1px solid black;
+  font-size: 1rem;
+
+}
+
+footer {
+  height: 10%;
+  background-color: #22313F;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 2rem;
+}
+
+/* IDs */
+
 #welcome-section, #projects {
   height: 100%;
 }
@@ -23,8 +45,6 @@ a {
 #contact {
    height: 90%;
 }
-
-
 
 
 #navbar {
@@ -62,7 +82,6 @@ a {
 
 
 
-
 #projects {
   height: 100%;
   width: 100%;
@@ -89,7 +108,6 @@ a {
 }
 
 
-
 .projects {
   border: 1px solid red;
   width: 20rem;
@@ -103,16 +121,6 @@ a {
   background-size: cover;
   z-index: 20;
   cursor: pointer;
-}
-
-
-li p{
-  margin-top: 13.5rem;
-  margin-left: -0.01rem;
-  margin-right: -0.01rem;
-  border-top: 1px solid black;
-  font-size: 1rem;
-
 }
 
 
@@ -153,42 +161,6 @@ li p{
 }
 
 
-
-
-@media only screen and (max-width: 1500px) {
-  #info {
-    margin: 0px 250px 0px 250px;
-  }
-  
-  .project-title {
-  list-style: none;
-}
-  
-  #projects, #welcome-section, #contact {
-    width: 150%;
-  }
- 
-#projects, #welcome-section, #contact {
-    width: 250%;
-}
-
-}
-
-
-
-
-.project-title {
-  margin-left: 20rem;
-  list-style: none;
-  display: grid;
-  grid-template-columns:500px 400px;
-}
-
-
- 
-
-
-  
 #links {
   margin-top: 12rem;
   margin-left: 22rem;
@@ -211,11 +183,36 @@ li p{
 }
 
 
-footer {
-  height: 10%;
-  background-color: #22313F;
-  color: white;
-  text-align: center;
-  font-size: 1.2rem;
-  padding-top: 2rem;
+/* Classes */
+
+.project-title {
+  margin-left: 20rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns:500px 400px;
+}
+
+
+
+
+
+/* Media Querys */
+
+@media only screen and (max-width: 1500px) {
+  #info {
+    margin: 0px 250px 0px 250px;
+  }
+  
+  .project-title {
+  list-style: none;
+}
+  
+  #projects, #welcome-section, #contact {
+    width: 150%;
+  }
+ 
+#projects, #welcome-section, #contact {
+    width: 250%;
+}
+
 }
