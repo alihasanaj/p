@@ -1,84 +1,55 @@
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta name="viewport" content="width=device-width">
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
-
-<nav id="navbar">
-	<a href="#welcome-section">About</a>
-    <a href="#projects">My Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-
-
-	<div id="welcome-section">
-    	<div id="info" >
-      		<h1>Hello I'm <strong>Ali Hasanaj</strong></h1>
-      		<p>I'm a developer</p>
-    	</div>
-	</div>
+<body>
+  <nav class="zone green">
+    <ul class="main-nav">
+        <li class="push"><a href="#About">About</a></li>
+        <li ><a href="#Projects">My Projects</a></li>
+    </ul>
+  </nav>
 
 
-	<div id="projects">
-		
-      <h1  >These are some of my projects..</h1>
+  <div id="About" class="text container zone yellow">
+    <h3> Hello I'm <em> Ali Hasanaj </em> <br> I'm a developer</h3>
+  </div>
 
-      <ul class="project-title">
-       
-          <li class="projects" id="CRM" onclick="window.open('https://github.com/alihasanaj/CRM-Java')" >
-          	
-              <p>
-                    Java CRM
-              </p>
-            
-          </li>
-        
-        
-        
-          <li class="projects" id="Queen" onclick="window.open('https://github.com/alihasanaj/8-of-Queens-Game')">
-          	
-              <p >
-                    C++ Queens Game
-              </p>
-            
-          </li>
-        
-        
-        
-          <li class="projects" id="landing" onclick="window.open('https://codepen.io/alihasanaj/full/ZqqaPw/')" >
-              <p>
-                    Product Landing Page
-              </p>
-          </li>
-        
-        
-        
-          <li class="projects" id="document" onclick="window.open('https://codepen.io/alihasanaj/full/NOmovX/')" >
-              <p>
-                    Technical Document
-              </p>
-          </li>
-        
-      </ul>
-	</div>
+  <div id="Projects" class="text blue">
+    <h3>Here are some of my projects...</h3>
+    <div class="container grid-wrapper">
 
-	<div id="contact">
-    <h1>If you want to contact me...</h1>
-    <div id="links">
-    <a href="https://github.com/alihasanaj/CRM-Java" target="_blank">Git Hub</a>
-    <a href="https://codepen.io/alihasanaj/" target="_blank">CodePen</a>
-    <a href="https://www.linkedin.com/in/ali-hasanaj-7a44a5172/" target="_blank">LinkedIn</a>
-    <a href="mailto:alihasanaj9@gmail.com" target="_blank">E-mail Me</a>
-    <a href="tel:519-560-0965" target="_blank">Call Me</a>
+      <div class="box zone CRM" onclick="window.open('https://github.com/alihasanaj/CRM-Java')" > 
+        <p>Customer Manager</p>
+      </div>
+      <div class="box zone Queen" onclick="window.open('https://github.com/alihasanaj/8-of-Queens-Game')" > 
+        <p>8 of Queens Game</p>
+      </div>
+      <div class="box zone landing" onclick="window.open('https://codepen.io/alihasanaj/full/ZqqaPw/')" > 
+        <p>Landing Page</p>
+      </div>
+      <div class="box zone document" onclick="window.open('https://codepen.io/alihasanaj/full/NOmovX/')"> 
+        <p>Document Page</p>
+      </div>
+      <div class="box zone shoppingList" onclick="window.open('https://codepen.io/alihasanaj/project/full/DPrBOb')"> 
+          <p>Shopping List</p>
+        </div>
     </div>
-    
-	</div>
-  <footer>
-        <p>Created by Ali Hasanaj</p>
-  </footer>
-  
+    <h3>You can contact me or see more of my work using the links below </h3>
+  </div>
+
+
+  <footer id="Contact" class="footer yellow">
+			  <a href="https://github.com/alihasanaj/CRM-Java" target="_blank"><img src="asssets\github.svg" width="30" height="30"></a>
+		    <a href="https://codepen.io/alihasanaj/" target="_blank"><img src="asssets\CodePen.svg" width="30" height="30"></a>
+		    <a href="https://www.linkedin.com/in/ali-hasanaj-7a44a5172/" target="_blank"><img src="asssets\linkedin.svg" width="30" height="30"></a>
+		    <a href="mailto:alihasanaj9@gmail.com" target="_blank"><img src="asssets\email.svg" width="30" height="30"></a>
+		    <a href="tel:519-560-0965" target="_blank"><img src="asssets\smartphone.svg" width="30" height="30"></a>
+	    <p>2019 &copy; Created by Ali Hasanaj</p>
+	</footer>
+</div>
+</body>
+</html>

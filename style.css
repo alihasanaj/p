@@ -1,218 +1,247 @@
-
-
-/* Tags */
-html, body {
-  height: 100%;
-  font-size: 1rem;
-  font-family: 'Dosis', sans-serif;
-  margin: 0;
+body  {
+    margin: 0 auto;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+html {
+    margin: 0%;
+    font-family: 'Dosis', sans-serif;
+}
+.zone {
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+    color:black;
+    font-size: 2rem;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/***********************************************************************
+ *  Nav Bar
+ **********************************************************************/
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.7em;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+    color: #000000;
+    text-decoration: none;
+}
+    
+
+/***********************************************************************
+ *  Cover
+ **********************************************************************/
+.container {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    
 }
 
-li p{
-  margin-top: 13.5rem;
-  margin-left: -0.01rem;
-  margin-right: -0.01rem;
-  border-top: 1px solid black;
-  font-size: 1rem;
-
+/***********************************************************************
+ *  Grid Panel
+ **********************************************************************/
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    grid-gap: 20px;
+    
 }
 
+.box {
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+
+
+.box > p {
+    margin: 0% 0% 0% -75%;
+    font-size: 1.5;
+    padding-right: 17px;
+}
+
+.CRM {
+    background-image:url("https://raw.githubusercontent.com/alihasanaj/CRM-Java/master/Previews/Login.PNG");
+    background-size: cover;
+    color: transparent;
+  }
+
+.CRM:hover {
+    background: #444;
+    color: white;
+  }
+  
+.Queen {
+    background-image:url("https://raw.githubusercontent.com/alihasanaj/8-of-Queens-Game/master/Previews/8-Queens-Game.PNG");
+    background-size: cover;
+    color: transparent;
+  }
+
+.Queen:hover {
+    background: #444; 
+    color: white;
+}
+  
+.landing {
+    
+    background-image:url("https://s3-us-west-2.amazonaws.com/i.cdpn.io/2494743.ZqqaPw.small.09c96b9c-18e5-4f92-a632-97d7a51d86ea.png");
+    background-size: cover;
+    color: transparent;
+     
+  }
+
+.landing:hover {
+    background: #444;
+    color: white;
+}
+  
+.document {
+    background-image:url("https://s3-us-west-2.amazonaws.com/i.cdpn.io/2494743.NOmovX.small.024c0dab-7fe2-4581-a870-216d4474e899.png");
+    background-size: cover;
+    color: transparent;
+  }
+
+.document:hover {
+    background: #444;
+    color: white;
+}
+
+.shoppingList {
+    background-image:url("https://raw.githubusercontent.com/alihasanaj/shoppingList/master/Assets/Shop.PNG");
+    background-size: cover;
+    color: transparent;
+}
+
+.shoppingList:hover {
+    background: #444;
+    color: white;
+}
+
+.text {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
 footer {
-  height: 10%;
-  background-color: #22313F;
-  color: white;
-  text-align: center;
-  font-size: 1.2rem;
-  padding-top: 2rem;
+    text-align: center;
+    padding-bottom:8px;
+    padding-top:8px;
 }
 
-/* IDs */
-
-#welcome-section, #projects {
-  height: 100%;
-}
-
-#contact {
-   height: 90%;
-}
-
-
-#navbar {
-  position: fixed;
-  text-align: right;
-  background-color: #EAF8BF;
-  padding-top: 0.3rem;
-  padding-bottom:0.2rem;
-  width: 95%;
-  padding-right: 10rem;
-  z-index: 100;
-}
-
-#navbar a:hover {
-  color: red;
-}
-
-#navbar a {
-  margin-left: 8rem;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-#welcome-section {
-  background-color: #EAF8BF;
-  text-align: center;
-}
-
-#info {
-  margin: 0px 750px 0px 750px;
-  padding-top: 40vh;
-  color: black;
-  z-index: 99;
-}
-
-
-
-#projects {
-  height: 100%;
-  width: 100%;
-  background-color: #006992;
-}
-
-
-
-#projects-holder {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-}
-
-#projects h1, #contact h1{
-  padding-top: 2rem;
-  padding-left: 45rem;
-}
-
-.project-title {
-  list-style: none;
-  display: grid;
-  grid-template-columns:200px 200px;
-}
-
-
-.projects {
-  border: 1px solid red;
-  width: 20rem;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 5rem;
-  margin-left: 10rem;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  transition: all 1s ease;
-  background-size: cover;
-  z-index: 20;
-  cursor: pointer;
-}
-
-
-.project-title li p {
-  padding-bottom: 3px;
-  background: white;
-}
-
-.projects:hover{
-  transform: scale(1.1) 
-}
-
-
-
-#CRM {
-  background-image:url("https://raw.githubusercontent.com/alihasanaj/CRM-Java/master/Previews/Login.PNG")
-}
-
-#Queen {
-  background-image:url("https://raw.githubusercontent.com/alihasanaj/8-of-Queens-Game/master/Previews/8-Queens-Game.PNG")
-   
-}
-
-#landing {
-  
-  background-image:url("https://s3-us-west-2.amazonaws.com/i.cdpn.io/2494743.ZqqaPw.small.09c96b9c-18e5-4f92-a632-97d7a51d86ea.png")
-   
-}
-
-#document {
-  background-image:url("https://s3-us-west-2.amazonaws.com/i.cdpn.io/2494743.NOmovX.small.024c0dab-7fe2-4581-a870-216d4474e899.png")
-}
-
-
-
-#contact {
-  background-color: #27476E;
-}
-
-
-#links {
-  margin-top: 12rem;
-  margin-left: 22rem;
-}
-  
-#contact a {
-      margin-right: 3rem;
-      padding:4rem;
-      border: 2px solid gray;
-      border-radius: 50%;
-      background-color: #F0F0F0;
-}
-
-#contact a:hover {
-    background-color: white;
-}
-
-#contact h1 {
-    padding-top: 8rem;
-}
-
-
-/* Classes */
-
-.project-title {
-  margin-left: 20rem;
-  list-style: none;
-  display: grid;
-  grid-template-columns:500px 400px;
-}
-
-
-
-
-
-/* Media Querys */
-
-@media only screen and (max-width: 1500px) {
-  #info {
-    margin: 0px 250px 0px 250px;
-  }
-  
-  .project-title {
-  list-style: none;
-}
-  
-  #projects, #welcome-section, #contact {
-    width: 150%;
-  }
  
-#projects, #welcome-section, #contact {
-    width: 250%;
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green {
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
 }
 
+/***********************************************************************
+ *  Dark Red Background
+ **********************************************************************/
+ .darkred{
+    background: rgb(169,3,41); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(169,3,41,1)), color-stop(44%,rgba(143,2,34,1)), color-stop(100%,rgba(109,0,25,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* IE10+ */
+    background: linear-gradient(left, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow {
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue {
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Purple Background
+ **********************************************************************/
+ .purple{
+    background: rgb(203,96,179); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(173,18,131,1) 50%, rgba(222,71,172,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(203,96,179,1)), color-stop(50%,rgba(173,18,131,1)), color-stop(100%,rgba(222,71,172,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(203,96,179,1) 0%,rgba(173,18,131,1) 50%,rgba(222,71,172,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(203,96,179,1) 0%,rgba(173,18,131,1) 50%,rgba(222,71,172,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(203,96,179,1) 0%,rgba(173,18,131,1) 50%,rgba(222,71,172,1) 100%); /* IE10+ */
+    background: linear-gradient(left, rgba(203,96,179,1) 0%,rgba(173,18,131,1) 50%,rgba(222,71,172,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=1 ); /* IE6-9 */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+ .red{
+    background: #ff3019; /* Old browsers */
+    background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ff3019 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #ff3019 0%,#cf0404 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */
 }
