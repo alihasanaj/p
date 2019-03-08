@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "Portfolio website",
   "main": "index.js",
-  "homepage": "https://github.com/alihasanaj/alihasanaj.github.io",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deply":"gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Ali Hasanaj",
   "license": "MIT",
