@@ -2,7 +2,7 @@
 // Widescreens
 @include mediaXl {
     .projects {
-        grid-template-columns:: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -10,7 +10,7 @@
 // Desktops & laptops
 @include mediaLg {
     .projects {
-        grid-template-columns:: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -51,7 +51,7 @@
         transform: translate3d(100%,0,0);
 
         .portrait {
-            background: url(/dist/img/portraitsmall.png);
+            background: url(/img/mainportrait.png);
             background-size: 100% 100%;
             background-repeat: no-repeat;
             width: 150px;
